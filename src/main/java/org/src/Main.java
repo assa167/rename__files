@@ -10,7 +10,7 @@ public class Main {
         String fileName = scanner.nextLine();
         scanner.close();
 
-        String directoryPath = "/Users/daniil_admin/Desktop/India_original_creo/Clean_metadata/News_hindi"; // path directory with files for rename
+        String directoryPath = "Path"; // path directory with files for rename
         int fileNumber = 1; // first number file
 
         File directory = new File(directoryPath);
