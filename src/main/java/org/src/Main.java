@@ -10,7 +10,7 @@ public class Main {
         String fileName = scanner.nextLine();
         scanner.close();
 
-        String directoryPath = "/Users/daniil_admin/Desktop/newfolder/"; // path directory with files for rename
+        String directoryPath = "/Users/daniil_admin/Desktop/India_original_creo/Clean_metadata/News_hindi"; // path directory with files for rename
         int fileNumber = 1; // first number file
 
         File directory = new File(directoryPath);
@@ -20,7 +20,7 @@ public class Main {
                 String fileExtension = getFileExtension(videoFile.getName());
 
                 String newFileName = fileName + "_" + fileNumber + fileExtension;
-                File newFile = new File(directoryPath + newFileName);
+                File newFile = new File(directoryPath + "/" + newFileName);
 
                 boolean isRenamed = videoFile.renameTo(newFile);
                 if (isRenamed) {
